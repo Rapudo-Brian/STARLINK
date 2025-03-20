@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STARLINK WiFi</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>STARLINK WiFi Subscription</h1>
+            <p>Choose a package to access the internet:</p>
+            <ul id="packages">
+                <li data-price="15">1HR - KSH.15</li>
+                <li data-price="35">3HRS - KSH.35</li>
+                <li data-price="50">12HRS - KSH.50</li>
+                <li data-price="70">24HRS - KSH.70</li>
+                <li data-price="300">1 WEEK - KSH.300</li>
+                <li data-price="650">2 WEEKS - KSH.650</li>
+                <li data-price="1300">1 MONTH - KSH.1300</li>
+            </ul>
+        </div>
+
+        <div id="payment-modal" class="modal">
+            <p id="payment-info">You are about to pay KSH.___ to STARLINK WIFI, click pay now to proceed.</p>
+            <input type="text" id="phone-number" placeholder="Enter Safaricom phone number">
+            <button id="pay-now">Pay Now</button>
+        </div>
+
+        <div id="reconnect-modal" class="modal">
+            <p>TO RECONNECT:</p>
+            <label for="transaction-code">CODE:</label>
+            <input type="text" id="transaction-code" placeholder="Enter transaction code">
+            <button id="reconnect">Reconnect</button>
+        </div>   
+        
+        <script src="script.js"></script>
+    </body>
+
+</html>
